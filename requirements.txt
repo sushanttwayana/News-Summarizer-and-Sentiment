@@ -1,0 +1,16 @@
+python-dotenv
+transformers
+requests
+beautifulsoup4 
+pandas
+numpy 
+torch 
+torchvision 
+torchaudio 
+os
+praw
+textblob
+nltk 
+newspaper3k
+tkinter
+Flask

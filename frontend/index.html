@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fromtend</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div class="container">
+        <h1>City News Analyzer</h1>
+        <form id="newsForm">
+            <label for="city">Enter City Name:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="source">Select News Source:</label>
+            <select id="source" name="source">
+                <option value="source1">One</option>
+                <option value="source2">Two</option>
+                <!-- Add more sources as needed -->
+            </select>
+
+            <button type="submit">Get News Analysis</button>
+        </form>
+
+        <div id="results">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('newsForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const city = document.getElementById('city').value;
+            const source = document.getElementById('source').value;
+
+            fetch(`/analyze?city=${city}&source=${source}`)
+                .then(response => response.json())
+                .then(data => {
+                    const resultsDiv = document.getElementById('results');
+                    resultsDiv.innerHTML = `
+                        <h2>Analysis for ${city}</h2>
+                        <h3>Summary:</h3>
+                        <p>${data.summary}</p>
+                        <h3>Sentiment:</h3>
+                        <p>${data.sentiment}</p>
+                        <h3>Actionable Needs:</h3>
+                        <p>${data.needs}</p>
+                    `;
+                });
+        });
+    </script>
+</body>
+</html>
