@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 python-dotenv
 transformers
 requests
@@ -14,3 +15,19 @@ nltk
 newspaper3k
 tkinter
 Flask
+=======
+tensorflow
+keras
+os
+random
+ResNet50
+Xception
+EarlyStopping
+sklearn.model_selection 
+numpy as np
+random
+matplotlib.pyplot as plt
+seaborn as sns
+warnings 
+tqdm 
+>>>>>>> 2d7ea6103e2c5ae6fd869f6ead09ffbb9ed18d4f
