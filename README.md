@@ -22,4 +22,4 @@ Web scraping, summarization using NLP techniques, sentiment analyses using libra
 # Conclusion
 Unfortunately, I couldnot make a full fledge project structure as per demanded but I have completed upto task 3 seperately and also have tried to implement frontend with html, css and flask . But I could not properly exececute them properly. All the task I have done for this project have been included with this github.
 
-Thankyou for this opprotunity.
+**Thankyou for this opprotunity. I have also attached a new project with full end to end deployment within this period named movies recommendation system . Please look througly to it as well**
